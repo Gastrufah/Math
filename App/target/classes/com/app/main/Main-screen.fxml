@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1200.0" style="-fx-background-color: #333333; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.main.Controller_Main">
+   <children>
+      <AnchorPane layoutY="361.0" prefHeight="420.0" prefWidth="1200.0" style="-fx-background-color: #E84C39;">
+         <children>
+            <Button fx:id="goToMatrixScreen" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="339.0" text="Действия с матрицами" />
+            <Button fx:id="goToTestScreen" layoutX="415.0" layoutY="14.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="339.0" text="Тестовый экран" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="406.0" layoutY="43.0" prefHeight="89.0" prefWidth="450.0" text="Лучшее в мире приложение" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Marlett" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

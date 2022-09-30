@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.main.Controller_Matrix">
+   <children>
+      <AnchorPane layoutY="569.0" prefHeight="211.0" prefWidth="1200.0" style="-fx-background-color: FF7051;">
+         <children>
+            <TextArea fx:id="outputConsole" editable="false" layoutX="366.0" layoutY="6.0" prefHeight="200.0" prefWidth="465.0" promptText="output" />
+            <Button fx:id="clearConsoleOutput" layoutX="906.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="70.0" text="clear" />
+         </children>
+      </AnchorPane>
+      <Group layoutX="152.0" layoutY="275.0">
+         <children>
+            <Button fx:id="butTransponirovat" layoutY="83.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Транспонировать" />
+            <Button fx:id="butSobstvennieChislaAndVektor" layoutX="28.0" layoutY="233.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="243.0" text="Собственные числа и вектор" />
+            <Button fx:id="butLvRazloj" layoutX="81.0" layoutY="194.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Lv-Разложение " />
+            <Button fx:id="butdiagonalVie" layoutY="159.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Диагональный вид" />
+            <Button fx:id="butTriangleView" layoutX="174.0" layoutY="159.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Треугольный вид" />
+            <Button fx:id="butFindRank" layoutY="122.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Найти ранг" />
+            <Button fx:id="butObratMAtrix" layoutX="174.0" layoutY="122.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Обратная Матрица" />
+            <Button fx:id="butDeterminant" layoutX="174.0" layoutY="83.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Определитель" />
+            <Button layoutX="192.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: FF7051;" text="+" textAlignment="CENTER" />
+            <Button layoutX="100.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: FF7051;" text="-" textAlignment="CENTER" />
+            <Label layoutX="20.0" layoutY="6.0" prefHeight="21.0" prefWidth="68.0" text="Размер" />
+            <TextField fx:id="dimentionFirstMatrixY" layoutX="99.0" layoutY="8.0" prefHeight="25.0" prefWidth="30.0" text="3" />
+            <TextField fx:id="dimentionFirstMatrixX" layoutX="191.0" layoutY="8.0" prefHeight="25.0" prefWidth="30.0" text="3" />
+            <Button fx:id="butConfirmDim" layoutX="231.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="V" />
+         </children>
+      </Group>
+      <AnchorPane layoutX="173.0" layoutY="59.0" prefHeight="200.0" prefWidth="269.0" style="-fx-border-color: FF4117;">
+         <children>
+            <TextArea fx:id="field12" layoutX="188.0" layoutY="81.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field00" layoutX="39.0" layoutY="26.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field10" layoutX="39.0" layoutY="81.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field20" layoutX="39.0" layoutY="135.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field01" layoutX="112.0" layoutY="26.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field21" layoutX="112.0" layoutY="135.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field22" layoutX="188.0" layoutY="135.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field02" layoutX="188.0" layoutY="26.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field11" layoutX="112.0" layoutY="78.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="543.0" layoutY="59.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: FF7051;" text="Button" />
+      <Button fx:id="butDifference" layoutX="543.0" layoutY="142.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: FF7051;" text="A - B" />
+      <Button fx:id="butProduct" layoutX="543.0" layoutY="188.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: FF7051;" text="A * B" />
+      <Button layoutX="530.0" layoutY="256.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="116.0" text="Button" />
+      <Button layoutX="530.0" layoutY="318.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="116.0" text="Button" />
+      <Button fx:id="butClearFirstMatrix" layoutX="110.0" layoutY="230.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: D9D9D9;" text="Х" textAlignment="CENTER" />
+      <Button fx:id="butClearSecondMatrix" layoutX="694.0" layoutY="233.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: D9D9D9;" text="X" textAlignment="CENTER" />
+      <Group layoutX="714.0" layoutY="282.0">
+         <children>
+            <Button fx:id="butTransponirovat1" layoutY="83.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Транспонировать" />
+            <Button fx:id="butSobstvennieChislaAndVektor1" layoutX="28.0" layoutY="233.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="243.0" text="Собственные числа и вектор" />
+            <Button fx:id="butLvRazloj1" layoutX="81.0" layoutY="194.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Lv-Разложение " />
+            <Button fx:id="butdiagonalVie1" layoutY="159.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Диагональный вид" />
+            <Button fx:id="butTriangleView1" layoutX="174.0" layoutY="159.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Треугольный вид" />
+            <Button fx:id="butFindRank1" layoutY="122.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Найти ранг" />
+            <Button fx:id="butObratMAtrix1" layoutX="174.0" layoutY="122.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Обратная Матрица" />
+            <Button fx:id="butDeterminant1" layoutX="174.0" layoutY="83.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Определитель" />
+            <Button layoutX="192.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: FF7051;" text="+" textAlignment="CENTER" />
+            <Button layoutX="100.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: FF7051;" text="-" textAlignment="CENTER" />
+            <Button layoutX="192.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: D9D9D9;" text="+" textAlignment="CENTER" />
+            <Button layoutX="100.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: D9D9D9;" text="+" textAlignment="CENTER" />
+         </children>
+      </Group>
+      <AnchorPane layoutX="735.0" layoutY="58.0" prefHeight="200.0" prefWidth="269.0" style="-fx-border-color: FF4117;">
+         <children>
+            <TextArea fx:id="field121" layoutX="188.0" layoutY="81.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field001" layoutX="39.0" layoutY="26.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field101" layoutX="39.0" layoutY="81.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field201" layoutX="39.0" layoutY="135.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field011" layoutX="112.0" layoutY="26.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field211" layoutX="112.0" layoutY="135.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field221" layoutX="188.0" layoutY="135.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field021" layoutX="188.0" layoutY="26.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+            <TextArea fx:id="field111" layoutX="112.0" layoutY="78.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: D9D9D9;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="butSumma" layoutX="543.0" layoutY="100.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: FF7051;" text="A + B" />
+   </children>
+</AnchorPane>
